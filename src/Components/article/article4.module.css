@@ -1,0 +1,55 @@
+.article{
+    position: relative;
+    background-color: white;
+    width: 80vw;
+    border-bottom: 1px #ccc solid;
+    padding: 10px;
+    margin: 0px;
+
+}
+.article img{
+    width: inherit;
+    height: auto;
+    overflow: hidden;
+    z-index: 2;
+    object-fit: cover;
+    object-position: center;
+}
+.article article{
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    font-weight: bold;
+    color: #000;
+    z-index: 1;
+    font-size: 20px;
+}
+.article p{
+    margin: 5px;
+    padding-left: 15px; 
+    color: #000;
+    z-index: 3;
+    font-weight: normal;
+    display: block;
+    color:rgb(0, 0, 0); 
+    background-color: white;
+    height: auto;
+}
+.article p a{
+    padding-top:5px;
+    display: block;
+    color: orangered;
+    text-decoration: underline;
+    font-style: italic
+}
+.article p a:hover{
+    color: orange;
+}
+.article small{
+    display: block;
+    padding:10px;
+    font-size: inherit;
+    color:inherit;
+    z-index: 3;
+}
+

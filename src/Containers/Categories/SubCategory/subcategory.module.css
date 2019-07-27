@@ -1,0 +1,36 @@
+.loading{
+    font-size: 50px;
+    text-align: center;
+}
+.ArticleList{
+    margin: 50px auto;
+    width:90%;
+    height: auto;
+    position: relative;
+}
+
+.category{
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    overflow:auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+
+}
+@media(max-width:700px){
+    .ArticleList{
+        width: 100%;
+    }
+    .category{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 500px;
+        overflow-y: scroll;
+    }
+
+}
+
+

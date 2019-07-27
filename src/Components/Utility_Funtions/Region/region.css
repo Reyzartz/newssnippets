@@ -1,0 +1,12 @@
+.region{
+    background-color: inherit;
+    color:white;
+    font-size: 20px;
+    border: none;
+    width: 140px;
+    text-align: center;
+    float:right;
+}
+.region option{
+    background-color: inherit
+}

@@ -1,0 +1,125 @@
+.article{
+    position: relative;
+    width: 20vw;
+    background-color: white;
+}
+.article:hover img{
+    filter: brightness(1.2);
+
+}
+.article img{
+    width: 100%;
+    height: 13vw;
+    overflow: hidden;
+    z-index: 2;
+    object-fit: cover;
+    object-position: top;
+}
+
+.article h4{
+    margin: 5px;
+    font-size: 1rem;
+    background-color: white;
+    font-weight: bold;
+    color: #000;
+    z-index: 1;
+}
+.article p{
+    margin: 5px;
+    font-size: 1rem;
+    color: #000;
+    z-index: 3;
+}
+.article p a{
+    padding-top:5px;
+    display: block;
+    color: orangered;
+    text-decoration: underline;
+    font-style: italic
+}
+.article p a:hover{
+    color: orange;
+}
+.article small{
+    display: block;
+    padding:10px;
+    font-size: 15px;
+    color:inherit;
+    z-index: 3;
+}
+@media(max-width:1200px){
+    .article{
+        width: 30vw;
+        margin: 0;
+    }
+    .article img{
+        height: 20vw;
+    }
+    .article p{
+        display: none;
+    }
+    .article:hover p{
+        display: block;
+        position: absolute;
+        margin:auto;
+        background-color: rgba(255, 255, 255, 0.9);
+        top: 0;
+        left:0;
+        width: inherit;
+        height: 20vw;
+        padding: 5px;
+        box-sizing: border-box;
+        overflow: auto;
+        overflow-wrap: break-word;
+        z-index:3;
+    }
+      
+}
+
+@media(max-width:700px){
+    .article{
+        width:100%;
+        border-bottom: 1px #ccc solid;
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .article img{
+        width: 30%;
+        height: auto;
+    }
+    .article:hover p{
+        display: block;
+        position: initial;
+        color:rgb(0, 0, 0); 
+        background-color: white;
+        height: auto;
+    }
+    .article:hover small{
+        position: relative;
+        padding: 10px;
+        left:2vw;
+    }
+    .article small{
+        position: inherit;
+        bottom: 3vw;
+        padding: 0;
+        left:32%;
+    }
+    .article h4{
+        position: absolute;
+        top:0;
+        left: 31%;
+    }
+    .article p{
+        display: none;
+    }
+}
+@media(max-width:500px){
+    .article h4{
+        font-size: 12px;
+    }
+    .article small{
+        font-size: 11px;
+    }    
+}
